@@ -30,7 +30,6 @@ ForEach ($id in $ids) {$id
 
 # Clearing previous tenant/directory login
 #Clear-AzContext -Force
-# get creds for login to pass to Login-AzAccount
 #Login-AzAccount -Credential $Credential -TenantId $id
 #Connect-AzAccount -TenantId $id
 Set-AzContext -TenantId $id
